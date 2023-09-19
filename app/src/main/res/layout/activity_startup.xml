@@ -17,6 +17,7 @@
             android:layout_height="60dp"
             android:src="@drawable/app_icon"
             android:maxHeight="1dp"
+            android:contentDescription="@string/app_icon_desc"
         />
         <TextView
             android:layout_width="wrap_content"
@@ -68,14 +69,13 @@
 
     <Button
         android:id="@+id/createAccountButton"
+        style="@style/RoundedButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"
-        android:text="Create an Account"
-        style="@style/RoundedButton"
         android:gravity="center_horizontal"
-        />
+        android:text="@string/create_an_account" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -86,19 +86,21 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Already a Member?"
+            android:text="@string/already_member"
             android:textColor="@color/black"
-            android:layout_below="@id/createAccountButton"
             android:paddingTop="16dp" />
+
         <TextView
             android:id="@+id/alreadyMemberLink"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sign in"
             android:paddingLeft="10dp"
+            android:paddingTop="16dp"
             android:textColor="@color/colorPrimary"
-            android:layout_below="@id/createAccountButton"
-            android:paddingTop="16dp" />
+            android:text="@string/sign_in"
+            android:clickable="true"
+            android:focusable="true"
+            />
 
     </LinearLayout>
 

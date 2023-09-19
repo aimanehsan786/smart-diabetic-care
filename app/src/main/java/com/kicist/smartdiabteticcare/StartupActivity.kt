@@ -1,22 +1,16 @@
 package com.kicist.smartdiabteticcare
 
+import android.content.Intent
 import android.os.Bundle
-import com.google.android.material.imageview.ShapeableImageView
 import android.widget.ImageView
 import android.widget.LinearLayout
-import android.graphics.drawable.ShapeDrawable
-import android.graphics.drawable.Drawable
-import android.graphics.drawable.LayerDrawable
-import android.graphics.drawable.shapes.OvalShape
-import android.widget.FrameLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.google.android.material.shape.CornerFamily
 import com.google.android.material.shape.ShapeAppearanceModel
-//import kotlinx.android.synthetic.main.activity_main.*
 import com.kicist.smartdiabteticcare.databinding.ActivityStartupBinding
+import com.kicist.smartdiabteticcare.helpers.LinkHelper
 
-//import kotlinx.android.synthetic.main.activity_main.*
 class StartupActivity : AppCompatActivity() {
     private val imageSwitcherData = arrayOf(
         mapOf(
@@ -69,12 +63,12 @@ class StartupActivity : AppCompatActivity() {
         }
 
         binding.createAccountButton.setOnClickListener {
-            // Handle Create an Account button click
+            startActivity(Intent(applicationContext, LoginActivity::class.java))
         }
 
-        binding.alreadyMemberLink.setOnClickListener {
-            // Handle Already a Member link click
-        }
+        LinkHelper.makeTextClickable(binding.alreadyMemberLink, fun () {
+            startActivity(Intent(applicationContext, LoginActivity::class.java))
+        }, false)
     }
 
     private fun updateImageNText(image: Int?, text: Int?){
@@ -100,7 +94,7 @@ class StartupActivity : AppCompatActivity() {
                 LinearLayout.LayoutParams.WRAP_CONTENT,
                 1.0f
             )
-            dot.setPadding(0, 0, 5, 0)
+            dot.setPadding(0, 0, 10, 0)
             binding.dots.addView(dot)
         }
 
