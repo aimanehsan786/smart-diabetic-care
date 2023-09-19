@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Smart Diabtetic Care</string>
+    <string name="start_activity_swicther_tag_1">Keeping Your Sugar In Check, One Prick At A Time</string>
+    <string name="start_activity_swicther_tag_2">Empowering Life Beyond Limits</string>
+    <string name="start_activity_swicther_tag_3">Measure, Monitor, Manage - Take Control of Your Health</string>
+    <string name="start_activity_swicther_tag_4">Simplifying Diabetes Management For A Better Life</string>
+    <string name="start_activity_swicther_tag_5">Your Health In Your Hands, Your Future In Your Control</string>
 </resources>
