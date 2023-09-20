@@ -15,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         LinkHelper.makeTextClickable(binding.forgotPassword, fun () {
-            startActivity(Intent(applicationContext, LoginActivity::class.java))
+            startActivity(Intent(applicationContext, ForgotPasswordActivity::class.java))
         }, false)
 
         binding.backArrow.setOnClickListener {
