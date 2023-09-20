@@ -63,7 +63,7 @@ class StartupActivity : AppCompatActivity() {
         }
 
         binding.createAccountButton.setOnClickListener {
-            startActivity(Intent(applicationContext, LoginActivity::class.java))
+            startActivity(Intent(applicationContext, SignupActivity::class.java))
         }
 
         LinkHelper.makeTextClickable(binding.alreadyMemberLink, fun () {

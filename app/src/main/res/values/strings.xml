@@ -8,9 +8,11 @@
     <string name="app_icon_desc">App Logo</string>
     <string name="already_member">Already a Member?</string>
     <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign Up</string>
     <string name="create_an_account">Create an Account</string>
     <string name="back">Back</string>
     <string name="email">Email Address</string>
+    <string name="name">Name</string>
     <string name="password">Password</string>
     <string name="forgot_password">Forgot your password?</string>
 </resources>
