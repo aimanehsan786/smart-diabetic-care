@@ -17,4 +17,6 @@
     <string name="forgot_password">Forgot your password?</string>
     <string name="send_reset">Send reset link</string>
     <string name="phone">Phone</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
