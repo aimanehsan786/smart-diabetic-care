@@ -17,6 +17,13 @@
     <string name="forgot_password">Forgot your password?</string>
     <string name="send_reset">Send reset link</string>
     <string name="phone">Phone</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="measure">Measure</string>
+    <string name="measure_now">Measure Now</string>
+    <string name="measure_now_arrow">Measure Now ></string>
+    <string name="measure_animation">Measure Animation</string>
+    <string name="last_reading">Last Reading</string>
+    <string name="recent_measurements">Recent Measurements</string>
+    <string name="_3_days_s">3 days: %s</string>
+    <string name="_7_days_s">7 days: %s</string>
+    <string name="_30_days_s">30 days: %s</string>
 </resources>

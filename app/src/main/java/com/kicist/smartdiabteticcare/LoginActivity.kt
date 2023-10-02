@@ -21,5 +21,8 @@ class LoginActivity : AppCompatActivity() {
         binding.backArrow.setOnClickListener {
             startActivity(Intent(applicationContext, StartupActivity::class.java))
         }
+        binding.loginButton.setOnClickListener {
+            startActivity(Intent(applicationContext, MainActivity::class.java))
+        }
     }
 }
