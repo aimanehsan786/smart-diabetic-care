@@ -1,5 +1,7 @@
 package com.kicist.smartdiabteticcare
 
+import android.app.AlertDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
@@ -29,6 +31,19 @@ class MainActivity : AppCompatActivity() {
         binding.accountImg.setImageResource(img)
     }
 
+    public fun measureBGL(){
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Loading")
+//        val inflater = layoutInflater
+//        val dialogLayout = inflater.inflate(R.layout.loader_layout, null)
+
+//        builder.setView(dialogLayout)
+        builder.setCancelable(false)  // Optional: prevent the dialog from being dismissed by back button or touch outside
+        val alertDialog = builder.create()
+        alertDialog.setCanceledOnTouchOutside(true)
+        alertDialog.show()
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -37,6 +52,11 @@ class MainActivity : AppCompatActivity() {
         val navView: BottomNavigationView = binding.navView;
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
+
+        binding.accountImg.setOnClickListener {
+            startActivity(Intent(this, ProfileActivity::class.java))
+        }
+
 
         navView.setupWithNavController(navHostFragment.navController)
     }

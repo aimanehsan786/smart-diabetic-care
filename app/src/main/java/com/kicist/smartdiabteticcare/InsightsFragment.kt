@@ -48,8 +48,6 @@ class InsightsFragment : Fragment() {
                 updateChartData(3)
             }
         }
-
-
         return binding.root
     }
 

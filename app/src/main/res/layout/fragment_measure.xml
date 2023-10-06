@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MeasureFragment">
+    tools:context=".MeasureFragment"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/measureFragmentLayout">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Measure Fragment"
-        android:textSize="24sp" />
+        <!-- ImageView for the main GIF -->
+        <ImageView
+            android:id="@+id/measureImg"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/anim_measure"
+            android:layout_gravity="center" />
 
-</FrameLayout>
+        <!-- TextView below the GIF -->
+        <TextView
+            android:id="@+id/textBelowGif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textSize="16dp"
+            android:text="@string/tap_to_measure" />
+
+        <!-- Rounded button with fingerprint GIF icon -->
+        <Button
+            android:id="@+id/measureBtnF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="100dp"
+            android:paddingRight="100dp"
+            android:background="@drawable/rounded_button_background"
+            android:text="@string/measure" />
+
+    </LinearLayout>
