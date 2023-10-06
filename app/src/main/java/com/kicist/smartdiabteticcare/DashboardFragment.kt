@@ -27,6 +27,8 @@ class DashboardFragment : Fragment() {
     ): View? {
         _binding = FragmentDashboardBinding.inflate(inflater, container, false)
 
+        (activity as MainActivity).invertTitleViewBG()
+
         Glide.with(this)
             .asGif()
             .load(R.drawable.anim_measure)
